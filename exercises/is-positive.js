@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create a `isPositive` function that takes a number as
@@ -8,11 +8,16 @@
  */
 
 // Your code:
-
+function isPositive(num) {
+  if (typeof num === "number" && num > 0) {
+    return true;
+  }
+  return false;
+}
 //* Begin of tests
-const assert = require('assert');
+const assert = require("assert");
 
-assert.strictEqual(typeof isPositive, 'function');
+assert.strictEqual(typeof isPositive, "function");
 assert.strictEqual(isPositive.length, 1);
 assert.strictEqual(isPositive(3), true);
 assert.strictEqual(isPositive(1998790), true);
