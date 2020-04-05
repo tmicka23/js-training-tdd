@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create a constant variable named `escapeStr` that contains
@@ -8,14 +8,16 @@
  */
 
 // Your code:
+const escapeStr =
+  "this '/' is a slash, this ' \\ ' is an anti-slash, this ' ' ' a quote, this ' \" ' is a double quote, this ' ` ' is backtick";
 
-//* Begin of tests
-const assert = require('assert');
+/* Begin of tests */
+const assert = require("assert");
 
-assert.strictEqual(typeof escapeStr, 'string');
+assert.strictEqual(typeof escapeStr, "string");
 assert.strictEqual(escapeStr.includes("'"), true);
 assert.strictEqual(escapeStr.includes('"'), true);
-assert.strictEqual(escapeStr.includes('`'), true);
-assert.strictEqual(escapeStr.includes('/'), true);
-assert.strictEqual(escapeStr.includes('\\'), true);
-// End of tests */
+assert.strictEqual(escapeStr.includes("`"), true);
+assert.strictEqual(escapeStr.includes("/"), true);
+assert.strictEqual(escapeStr.includes("\\"), true);
+/* End of tests */
